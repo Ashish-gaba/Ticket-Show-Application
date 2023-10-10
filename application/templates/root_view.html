@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Show</title>
+  <!-- Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('root')}}">
+        <img src="https://img.icons8.com/color/96/null/popcorn.png" alt="Logo" width="30" height="26"
+          class="d-inline-block align-text-top">
+        TicketShow
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ url_for('root')}}">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap container class -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-10">
+        <h2 class="text-center mb-4">Welcome to Ticket-Show Application</h2>
+
+        <p class="lead text-center" style="max-width: 1000px ">Thank you for visiting my application.</p>
+
+        <ul class="lead" style="list-style:square;">
+          <li>I am delighted to have the opportunity to showcase my ticket booking application, which I've been working
+            on after completing the App Dev 1 course.
+            This application is designed to cater to the needs of users who want to book tickets online in a hassle-free
+            manner.</li>
+
+          <li>
+            It is a multi-user app (one admin & multiple users). User can book multiple shows from multiple venues while
+            an Admin can create venues & shows.
+            Each venue can run a number of shows.
+          </li>
+          <li>
+            I have used Flask for application code, Jinja2 templates + Bootstrap for HTML generation and styling, SQLite
+            for data storage.
+          </li>
+
+          <li>
+            I hope you'll find my application impressive, and I welcome any feedback or suggestions you may have.
+          </li>
+
+        </ul>
+        <!-- Bootstrap form classes -->
+        <form method="post" class="mb-3 d-flex justify-content-center">
+          <div class="mb-3 me-2">
+            <input type="submit" name="user_type" value="User Login" class="btn btn-outline-danger btn-lg">
+          </div>
+          <div class="mb-3">
+            <input type="submit" name="user_type" value="Admin Login" class="btn btn-outline-danger btn-lg">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JavaScript links -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
